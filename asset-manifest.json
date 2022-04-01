@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/taskio/static/css/main.41038d9b.css",
+    "main.js": "/taskio/static/js/main.66baff62.js",
+    "static/js/27.16ec021d.chunk.js": "/taskio/static/js/27.16ec021d.chunk.js",
+    "static/media/taskclap.png": "/taskio/static/media/taskclap.ae72f869cce08784be9f.png",
+    "static/media/macro.png": "/taskio/static/media/macro.3d34d5ce946f2d1d4da0.png",
+    "static/media/taskdrop.png": "/taskio/static/media/taskdrop.a25d63cd789d957f982e.png",
+    "static/media/micro.png": "/taskio/static/media/micro.554b47d4fd9f0900c4a7.png",
+    "static/media/WalletConnect.png": "/taskio/static/media/WalletConnect.13798276a43e02957131.png",
+    "static/media/metamask.png": "/taskio/static/media/metamask.900b5bef784601bc0be8.png",
+    "static/media/heroimageL.png": "/taskio/static/media/heroimageL.c2e534ac6351ddf2bd4e.png",
+    "static/media/heroimageD.png": "/taskio/static/media/heroimageD.5d60c4a22524c2be18dd.png",
+    "static/media/Sbbg.png": "/taskio/static/media/Sbbg.0c83f15fa5be2b3b5b05.png",
+    "static/media/image1L.png": "/taskio/static/media/image1L.fa5ab9fc1ce21915ba4c.png",
+    "static/media/image2L.png": "/taskio/static/media/image2L.2fd95c523925105ce727.png",
+    "static/media/image3L.png": "/taskio/static/media/image3L.aeb570b24272a07537fa.png",
+    "static/media/image1D.png": "/taskio/static/media/image1D.7639f09640401510d044.png",
+    "static/media/image2D.png": "/taskio/static/media/image2D.62fed26d259792aca7e9.png",
+    "static/media/image3D.png": "/taskio/static/media/image3D.04d9049a78cadb37cb6d.png",
+    "static/media/footerbox.png": "/taskio/static/media/footerbox.d1192e1c42c7494d288b.png",
+    "static/media/metamask.svg": "/taskio/static/media/metamask.4368e45a954072443e7a.svg",
+    "static/media/MetaMask_Fox.svg": "/taskio/static/media/MetaMask_Fox.45038d58ac694e29ee70.svg",
+    "index.html": "/taskio/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.41038d9b.css",
+    "static/js/main.66baff62.js"
+  ]
+}
