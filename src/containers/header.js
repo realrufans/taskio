@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Header } from "../components";
 import { ThemeContext } from "../lib/context";
- 
 
 function HHeader() {
   const { theme, setTheme, modal, setModal } = useContext(ThemeContext);
@@ -26,13 +25,13 @@ function HHeader() {
 
   window.onscroll = () => getLoadingWidth();
 
- 
   return (
     <Header>
       <Header.Frame>
-        <Header.LogoFrame>
+        <Header.LogoFrame
+          onClick={() => (window.location.href = "https://telostask.io")}
+        >
           <Header.Logo
-            onClick={() => (window.location.href = "https://telostask.app")}
             src={require("../icons/logo.png")}
             alts="telostask logo"
           />{" "}
