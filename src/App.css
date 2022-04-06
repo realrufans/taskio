@@ -188,7 +188,6 @@ iframe {
   }
   .featuresdnp {
     width: 50%;
-     
   }
 }
 
@@ -269,8 +268,8 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2em auto;
-    padding: 2em;
+    margin: 0 auto;
+
     max-width: 1120px;
   }
   .tokenomics,
@@ -303,16 +302,14 @@ a:hover {
     margin-bottom: 10em;
   }
   .secA {
-    gap: 6em;
-    height: 70vh;
+    height: 100vh;
   }
-  .firstp{
+  .firstp {
     font-size: x-large;
   }
 
-  .ff{
+  .ff {
     height: 50vh;
-   
   }
 
   h1 {
