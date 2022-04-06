@@ -15,6 +15,7 @@ function FFooter() {
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
       data-aos-once="false"
+      className="ff"
     >
       <Footer>
         <Footer.FirstFrame>

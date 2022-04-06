@@ -40,28 +40,28 @@ function HHeader() {
 
         <Header.MiddleFrame>
           <Header.TextLinks
-            href="https://telostask.app/login"
+            href="https://telostask.io/form/"
             target="_blank"
             rel="noopener"
           >
             Get tasks
           </Header.TextLinks>
           <Header.TextLinks
-            href="https://telostask.app/login"
+            href="https://telostask.io/wp-content/uploads/2021/04/Telos-Task-Whitepaper-2.pdf"
             target="_blank"
             rel="noopener"
           >
             Task Paper
           </Header.TextLinks>
           <Header.TextLinks
-            href="https://telostask.app/login"
+            href="https://telostask.medium.com/"
             target="_blank"
             rel="noopener"
           >
             Task Blog
           </Header.TextLinks>
           <Header.TextLinks
-            href="https://telostask.app/login"
+            href="https://docs.google.com/presentation/d/1RzQHW-9KR8mDFRNonnuSmxK2y37f0i-12PDA61uvo_4/edit#slide=id.p1"
             target="_blank"
             rel="noopener"
           >
@@ -72,10 +72,10 @@ function HHeader() {
             target="_blank"
             rel="noopener"
           >
-            Browse Task
+            Product
           </Header.TextLinks>
           <Header.TextLinks
-            href="https://telostask.io/wp-content/uploads/2021/04/Telos-Task-Whitepaper-2.pdf"
+            href="https://telostask.io/bug-report/"
             target="_blank"
             rel="noopener"
           >
