@@ -8,65 +8,10 @@ body {
   font-weight: 400;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 .App {
   text-align: center;
 
-  width: 100%;
   margin: 0 auto;
-}
-
-.lastPoint {
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-iframe {
-  width: 500px;
-  height: 300px;
-}
-@media (max-width: 900px) {
-  iframe {
-    width: 500px;
-  }
-}
-
-@media (max-width: 550px) {
-  iframe {
-    width: 400px;
-  }
-}
-
-@media (max-width: 410px) {
-  iframe {
-    width: 340px;
-  }
-}
-.sliderFrame {
-  max-width: 1400px;
-  width: 70%;
-  margin: 0 auto;
-  margin-bottom: 7em;
-  z-index: 1;
-}
-
-@media (max-width: 750px) {
-  .sliderFrame {
-    width: 90%;
-    margin-bottom: 5em;
-  }
-}
-
-.newsFrame {
-  margin-bottom: 3em;
-}
-
-.man {
-  margin-top: 5em;
 }
 
 .headertext {
@@ -83,90 +28,81 @@ iframe {
   width: 30%;
 }
 
-.modalBackground {
-  background-color: rgba(200, 200, 200);
-  position: fixed;
-  color: #6b8299;
-  max-width: 500px;
-  background: white;
-  position: fixed;
-  right: 120px;
-  top: 56px;
-  z-index: 1000;
-  width: 25%;
-  box-shadow: 2px 1px 5px 2px grey;
-}
+/* taskio */
 
-@media (max-width: 900px) {
-  .modalBackground {
-    right: 5%;
-    width: 90%;
-  }
-}
-
-.Cbtn {
-  width: 90%;
-  border-radius: 0.6em;
-  font-size: 1.1rem;
-  justify-content: center;
-  margin: 0.5em auto;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  gap: 8px;
-  padding: 16px;
-  cursor: pointer;
-  line-height: 1;
-  white-space: nowrap;
-  font-weight: normal;
-  box-shadow: rgb(0 0 0 / 12%) 0px 1px 6px 0px;
-  background: rgb(255, 255, 255);
-  border: 1px solid transparent;
-  color: rgb(0, 0, 0);
-}
-
-.Cbtn:hover {
-  background: #6b8299;
-  color: white;
-}
-.discled {
-  opacity: 0.5;
-}
-.disabled :hover {
-  cursor: none;
-  background: "";
-}
-
-.walletIcon {
-  width: 10%;
-  margin-right: 0.1em;
-}
 .all {
-  margin: 5em auto;
+  margin-top: 3em;
 }
 
-.secA {
-  text-align: center;
+.secA,
+.secAChildren,
+.secB,
+.secCFAndVid,
+.sectionBChild,
+.sectionDChildren,
+.secE,
+.secEChildren {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
+  align-items: center;
+}
+
+.secA > h1,
+.secB > h1,
+.secC > h1,
+.secD > h1,
+.secE > h1 {
+  order: -1;
+  text-align: center;
+  font-weight: bold;
+  margin: 1em auto;
+  width: fit-content;
 }
 
 .firstp,
 .TtaskInfo,
-.secfd {
-  text-align: center;
-  margin: 0 auto;
+.secfd,
+.secC > p,
+.text,
+.roadMap,
+.tokenomics {
+  text-align: left;
   padding: 1em;
-  text-align: start;
-  line-height: 1.8;
+  max-width: 600px;
+  line-height: 1.9em;
+  font-size: 16px;
 }
 
-/* .TtaskInfo{
-  max-width: 1000px;
-  background-color: red;
-} */
+.secEChildren {
+  max-width: 490px;
+}
+.points {
+  width: fit-content;
+  padding: 1em;
+}
+
+.dnp {
+  display: flex;
+}
+.dnp > div {
+  width: fit-content;
+}
+
+.icon {
+  background-color: #1dbf73;
+  color: white;
+  border-radius: 50%;
+  height: 15px;
+  margin-right: 0.5em;
+  display: inline;
+}
+.tokenDetails {
+  text-align: start;
+}
+
+/* breakpoints */
 @media (min-width: 500px) {
   .image {
     width: 50%;
@@ -176,34 +112,23 @@ iframe {
   .image {
     width: 60%;
   }
-  .secA {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
 @media (max-width: 500px) {
   .image {
     width: 80%;
   }
-  .featuresdnp {
-    width: 50%;
-  }
-}
-
-.dnp {
-  display: flex;
 }
 
 iframe {
   margin-top: 2em;
-}
-.features {
-  margin-left: 1em;
+  width: 90%;
 }
 
 .strong {
   margin-right: 0.3em;
+  font-weight: bold;
+  font-size: large;
 }
 a {
   color: blue;
@@ -213,84 +138,67 @@ a:hover {
   color: #1dbf73;
 }
 
-.secCP :last-child {
-  max-width: 500px;
-  text-align: start;
-}
-.secfd {
-  max-width: 600px;
-  margin: 1.3em auto;
-}
-
 .dnp {
   align-items: center;
   text-align: start;
   margin: 0.5em auto;
 }
-.dnp > div {
-  width: 100%;
-}
-.dot {
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: #1dbf73;
-  display: inline-block;
-  margin-right: 0.5em;
-}
 
-.tokenomics div {
-  line-height: 1.8;
-  padding: 1em;
-  text-align: start;
-}
-
-.roadMap {
-  padding: 1em;
-}
-
-@media (max-width: 700px) {
-  .tokenomics {
-    flex-direction: column;
-  }
-  .firstp,
-  .TtaskInfo,
-  .secfd {
-    max-width: 600px;
-  }
-}
-
+/* Desktop */
 @media (min-width: 700px) {
-  .secA,
-  .secCP,
-  .tokenomics,
-  .roadMap {
+  .secA {
+    margin-right: 4em;
+    margin-left: 4em;
+  }
+  iframe {
+    margin-top: 2em;
+    width: 40%;
+  }
+
+  .secAChildren,
+  .secC,
+  .secCFAndVid,
+  .sectionBChild,
+  .secD,
+  .sectionDChildren,
+  .secEChildren {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1120px;
+    text-align: center;
+  }
+
+  .secEChildren {
+    width: 100%;
+  }
+  .secC > p {
+    text-align: start;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .secCFAndVid {
+    align-items: center;
+  }
+
+  .secCFAndVid {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-
-    max-width: 1120px;
-  }
-  .tokenomics,
-  .secCP {
-    justify-content: space-around;
   }
 
   .image {
-    max-width: 30%;
+    max-width: 25%;
   }
   .firstp,
   .TtaskInfo,
   .secfd {
-    max-width: 700px;
+    width: 100%;
     font-size: larger;
-
     text-align: start;
+    max-width: 0 auto;
   }
-  .TtaskInfo {
-    max-width: 1000px;
-  }
+
   .secBChildren {
     margin-top: 2em;
   }
@@ -301,51 +209,4 @@ a:hover {
   .secE {
     margin-bottom: 10em;
   }
-  .secA {
-    height: 100vh;
-  }
-  .firstp {
-    font-size: x-large;
-  }
-
-  .ff {
-    height: 50vh;
-  }
-
-  h1 {
-    font-weight: 900;
-    margin: 0 auto;
-    width: 500px;
-    text-align: center;
-  }
 }
-
-/* @media (max-width: 700px) {
-  .secA,
-  .secB,
-  .secC,
-  .secCP,
-  .tokenomics,
-  .secBChildren,
-  .roadMap {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .firstp,
-  .TtaskInfo {
-    margin: 0.5em;
-    text-align: center;
-  }
-  .TtaskInfo {
-    width: 90%;
-  }
-  .points {
-    padding: 1em;
-  }
-
-  .image {
-    width: 40%;
-  }
-}
-  */
