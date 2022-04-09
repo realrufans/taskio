@@ -25,7 +25,7 @@ function App() {
   localStorage.setItem("userThemeChoice", theme);
   return (
     <ThemeContext.Provider value={{ theme, setTheme, modal, setModal, appRef }}>
-      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <ThemeProvider theme={theme === "dark" ? darkTheme : darkTheme}>
         <GlobalStyles />
         <BrowserRouter>
           <div className="App">

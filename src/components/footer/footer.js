@@ -3,9 +3,8 @@ import styled from "styled-components";
 import { CheckerHBg, CheckColor } from "../constants/themeCheckerForBg";
 
 export const Container = styled.footer`
-  
   background: ${() => CheckerHBg("Sbbg")} top left/cover no-repeat;
-  
+  background: #18273d;
   margin: 0 auto;
 `;
 
@@ -48,7 +47,7 @@ export const QuickSection = styled.div`
   margin-left: 1em;
 `;
 export const SectionTitle = styled.h3`
-  color: ${() => CheckColor("#1f3045", "#f0f4fc")};
+  color: ${() => CheckColor("#f0f4fc")};
 `;
 export const Links = styled.a`
   display: block;

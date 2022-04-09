@@ -1,3 +1,4 @@
+import { MenuIcon } from "@heroicons/react/solid";
 import React, { useContext, useState, useEffect } from "react";
 import { Header } from "../components";
 import { ThemeContext } from "../lib/context";
@@ -84,7 +85,7 @@ function HHeader() {
         </Header.MiddleFrame>
 
         <Header.RightFrame id="login">
-          <Header.Themebtn
+          <MenuIcon className="menu"
             onClick={themeToggler}
             src={require("../icons/day-icon.png")}
           />
