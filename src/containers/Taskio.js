@@ -85,7 +85,7 @@ function Taskio() {
 
       {/* sectionc */}
       <div className="secC">
-        <h1> TelosTask Platform</h1>
+        <h1> TelosTask platform</h1>
 
         <p className="secp">
           {" "}

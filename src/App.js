@@ -10,17 +10,16 @@ import { useState, useRef } from "react";
 import { ThemeContext } from "./lib/context";
 import Typewriter from "typewriter-effect";
 import Taskio from "./containers/Taskio";
+import { useEffect } from "react/cjs/react.production.min";
 
 function App() {
   const getUserTheme = localStorage.getItem("userThemeChoice");
-  const appRef = useRef(null);
+  const appRef = useRef();
   const [theme, setTheme] = useState(
     getUserTheme === null ? "dark" : getUserTheme
   );
 
-  // login modal
   const [modal, setModal] = useState(false);
-  console.log("rendered");
 
   localStorage.setItem("userThemeChoice", theme);
   return (
@@ -30,9 +29,10 @@ function App() {
         <BrowserRouter>
           <div className="App">
             <HHeader />
-
+            <div onClick={() => setModal(false)}>
             <Taskio />
             <FFooter />
+            </div>
           </div>
         </BrowserRouter>
       </ThemeProvider>

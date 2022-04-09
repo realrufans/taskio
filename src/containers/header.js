@@ -2,6 +2,7 @@ import { MenuIcon } from "@heroicons/react/solid";
 import React, { useContext, useState, useEffect } from "react";
 import { Header } from "../components";
 import { ThemeContext } from "../lib/context";
+import Modal from "./Modal";
 
 function HHeader() {
   const { theme, setTheme, modal, setModal } = useContext(ThemeContext);
@@ -27,7 +28,7 @@ function HHeader() {
   window.onscroll = () => getLoadingWidth();
 
   return (
-    <Header>
+    <Header className="Header">
       <Header.Frame>
         <Header.LogoFrame
           onClick={() => (window.location.href = "https://telostask.io")}
@@ -85,8 +86,9 @@ function HHeader() {
         </Header.MiddleFrame>
 
         <Header.RightFrame id="login">
-          <MenuIcon className="menu"
-            onClick={themeToggler}
+          <MenuIcon
+            className="menu"
+            onClick={() => setModal(!modal)}
             src={require("../icons/day-icon.png")}
           />
         </Header.RightFrame>
