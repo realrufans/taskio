@@ -326,3 +326,7 @@ a:hover {
 .tokenDetails:hover {
   transform: scale(1.1);
 }
+
+.imagesec{
+  max-width: 350px;
+}

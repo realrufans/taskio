@@ -57,8 +57,8 @@ function Taskio() {
 
             <div className="sectionBChild">
               <img
-                className="image"
-                src="http://landing.mydappr.io/wp-content/uploads/2020/07/macro-300x282.png"
+                className="image imagesec"
+                src='https://telostask.io/wp-content/uploads/2021/02/kisspng-initial-coin-offering-blockchain-cryptocurrency-se-5c6e44946bf213.4465598515507303884422.png'
                 alt="the mission"
               />
 
