@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/taskio/static/css/main.8ef857b4.css",
-    "main.js": "/taskio/static/js/main.16e03f28.js",
+    "main.css": "/taskio/static/css/main.b7ed1323.css",
+    "main.js": "/taskio/static/js/main.b7e3d2e1.js",
     "static/js/27.16ec021d.chunk.js": "/taskio/static/js/27.16ec021d.chunk.js",
     "static/media/taskclap.png": "/taskio/static/media/taskclap.ae72f869cce08784be9f.png",
     "static/media/macro.png": "/taskio/static/media/macro.3d34d5ce946f2d1d4da0.png",
     "static/media/taskdrop.png": "/taskio/static/media/taskdrop.a25d63cd789d957f982e.png",
     "static/media/micro.png": "/taskio/static/media/micro.554b47d4fd9f0900c4a7.png",
+    "static/media/hero.svg": "/taskio/static/media/hero.0f866d3a63e8b5feb07a0806e3605c09.svg",
     "static/media/WalletConnect.png": "/taskio/static/media/WalletConnect.13798276a43e02957131.png",
     "static/media/metamask.png": "/taskio/static/media/metamask.900b5bef784601bc0be8.png",
     "static/media/heroimageL.png": "/taskio/static/media/heroimageL.c2e534ac6351ddf2bd4e.png",
     "static/media/heroimageD.png": "/taskio/static/media/heroimageD.5d60c4a22524c2be18dd.png",
+    "static/media/mission.svg": "/taskio/static/media/mission.036b54f6ef23a952ee78ca807f971d13.svg",
     "static/media/Sbbg.png": "/taskio/static/media/Sbbg.0c83f15fa5be2b3b5b05.png",
     "static/media/image1L.png": "/taskio/static/media/image1L.fa5ab9fc1ce21915ba4c.png",
     "static/media/image2L.png": "/taskio/static/media/image2L.2fd95c523925105ce727.png",
@@ -24,7 +26,7 @@
     "index.html": "/taskio/index.html"
   },
   "entrypoints": [
-    "static/css/main.8ef857b4.css",
-    "static/js/main.16e03f28.js"
+    "static/css/main.b7ed1323.css",
+    "static/js/main.b7e3d2e1.js"
   ]
 }
