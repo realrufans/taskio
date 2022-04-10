@@ -4,6 +4,8 @@ import { CheckCircleIcon } from "@heroicons/react/solid";
 import hero from "../icons/hero.svg";
 import mission from "../icons/mission.svg";
 import { Typing, TypingStep } from "typing-effect-reactjs";
+import TypeAnimation from 'react-type-animation';
+
 
 function Taskio() {
   AOS.init();

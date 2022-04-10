@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
 
 import { CheckerHBg, CheckColor } from "../constants/themeCheckerForBg";
 
@@ -6,7 +7,7 @@ export const Container = styled.footer`
   background: ${() => CheckerHBg("Sbbg")} top left/cover no-repeat;
   background: #18273d;
   margin: 0 auto;
-  margin-top:1em;
+  margin-top: 1em;
 `;
 
 export const FirstFrame = styled.div`
@@ -69,7 +70,20 @@ export const SecondFrame = styled.div`
 export const SocialsFrame = styled.div`
   margin-right: 2em;
 `;
+
+const swipe = keyframes`
+ 0%,100%{
+  transform: rotate(0deg)
+ }
+ 50% {
+  transform: rotate(180deg)
+ }
+
+`;
 export const SocialsImg = styled.img`
+  &: hover {
+    animation: ${swipe} 1s ease;
+  }
   width: 20%;
   cursor: pointer;
   @media (max-width: 900px) {
