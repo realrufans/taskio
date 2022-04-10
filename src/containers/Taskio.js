@@ -147,7 +147,7 @@ function Taskio() {
             </p>
             <p>
               {" "}
-              <CheckCircleIcon className="icon" /> Team - 16% (4 years vesting
+              <CheckCircleIcon className="icon" /> Team - 16% (5 years vesting
               2021 - 2025)
             </p>
             <p>

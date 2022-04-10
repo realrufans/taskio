@@ -34,7 +34,7 @@ function HHeader() {
     <Header className="Header">
       <Header.Frame>
         <Header.LogoFrame
-          onClick={() => (window.location.href = "https://telostask.io")}
+          onClick={() => (window.location.href = "/")}
         >
           <Header.Logo
             src={require("../icons/logo.png")}
