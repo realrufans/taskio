@@ -59,7 +59,7 @@ function Taskio() {
             <div className="sectionBChild">
               <img
                 className="image imagesec"
-                src="https://telostask.io/wp-content/uploads/2021/02/kisspng-initial-coin-offering-blockchain-cryptocurrency-se-5c6e44946bf213.4465598515507303884422.png"
+                src="https://images.hive.blog/DQmQwogeucHRkRXdcZBtGGuNHchmdR6bb8yWYiq3Q1TuqDb/image.png"
                 alt="the mission"
               />
 
@@ -92,6 +92,7 @@ function Taskio() {
           <Typing
             text="A new powerful freelance marketplace built by innovative minds and with flawless technology for the freelance community."
             element="p"
+            typeSpeed={200}
           />
         </div>
 
@@ -137,38 +138,41 @@ function Taskio() {
         <div className="sectionDChildren">
           <img
             className="image"
-            src="https://telostask.io/wp-content/uploads/2021/04/taskt.png"
+            src='https://images.hive.blog/DQmVLw5r64eCcE2EPhAvoxHomVbVdEEX6SSUQ8X2LeZme6b/image.png'
           />
           <div className="tokenDetails">
             <p>
               {" "}
-              <CheckCircleIcon className="icon" /> Total token supply:
-              100,000,000
+              <CheckCircleIcon className="icon" />
+              <span> Total token supply: 100,000,000</span>
             </p>
             <p>
               {" "}
-              <CheckCircleIcon className="icon" /> Team - 16% (5 years vesting
-              2021 - 2025)
+              <CheckCircleIcon className="icon" />{" "}
+              <span>Team - 16% (5 years vesting 2021 - 2025)</span>
             </p>
             <p>
               {" "}
-              <CheckCircleIcon className="icon" /> Marketing - 20%
+              <CheckCircleIcon className="icon" />
+              <span> Marketing - 20%</span>
             </p>
             <p>
               {" "}
-              <CheckCircleIcon className="icon" /> ITO - 40%
+              <CheckCircleIcon className="icon" /> <span>ITO - 40%</span>
             </p>
             <p>
               {" "}
-              <CheckCircleIcon className="icon" /> Development - 20%
+              <CheckCircleIcon className="icon" />{" "}
+              <span>Development - 20%</span>
             </p>
             <p>
               {" "}
-              <CheckCircleIcon className="icon" /> Airdrop - 1%
+              <CheckCircleIcon className="icon" /> <span>Airdrop - 1%</span>
             </p>
             <p>
               {" "}
-              <CheckCircleIcon className="icon" /> Unallocated/minting - 3%
+              <CheckCircleIcon className="icon" />
+              <span> Unallocated/minting - 3%</span>
             </p>
           </div>
         </div>
@@ -185,24 +189,24 @@ function Taskio() {
               <h3>2020: Q4 - 2021 Q2</h3>
               <p>
                 <CheckCircleIcon className="icon" />
-                Ideations of a gig
+                <span> Ideations of a gig</span>
               </p>
 
               <p>
                 <CheckCircleIcon className="icon" />
-                Telos Task envisioned
+                <span> Telos Task envisioned</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                Telos Task branding
+                <span> Telos Task branding</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                Telos WPS Approved to build
+                <span> Telos WPS Approved to build</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                TelosTask Alpha development
+                <span> TelosTask Alpha development</span>
               </p>
             </div>
 
@@ -210,95 +214,95 @@ function Taskio() {
               <h3>2021 - Q1, 2022 - Q1</h3>
               <p>
                 <CheckCircleIcon className="icon" />
-                Countdown to launch Alpha announcement
+                <span> Countdown to launch Alpha announcement</span>
               </p>
 
               <p>
                 <CheckCircleIcon className="icon" />
-                I.T.O (Initial Taskofferings)
+                <span> I.T.O (Initial Task offerings)</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                Alpha Platform Launch
+                <span> Alpha Platform Launch</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                First Marketing
+                <span> First Marketing</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                $TASK first Dex listing
+                <span> $TASK first Dex listing</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                distribution
+                <span> distribution</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                Development of TelosTask V2 (Beta)
+                <span> Development of TelosTask V2 (Beta)</span>
               </p>
             </div>
             <div className="tokenDetails roadmappoints">
               <h3>2022, (Q2) - 2023 (Q2)</h3>
               <p>
                 <CheckCircleIcon className="icon" />
-                TelosTask V2 (Beta 2.0 launched)
+                <span> TelosTask V2 (Beta 2.0 launched)</span>
               </p>
 
               <p>
                 <CheckCircleIcon className="icon" />
-                Final IDO (TaskFi Offering)
+                <span> Final IDO (TaskFi Offering)</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                More Marketing
+                <span> More Marketing</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                Team expansion
+                <span> Team expansion</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                Mobile App (Android version)
-              </p>
-
-              <p>
-                <CheckCircleIcon className="icon" />
-                Exchange listing
-              </p>
-              <p>
-                <CheckCircleIcon className="icon" />
-                Task Referral program
-              </p>
-              <p>
-                <CheckCircleIcon className="icon" />
-                Partnerships
+                <span> Mobile App (Android version)</span>
               </p>
 
               <p>
                 <CheckCircleIcon className="icon" />
-                Mobile app (IOs version)
+                <span> Exchange listing</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                Series of features and upgrades updates
+                <span>Task Referral program</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                First Task token burn 🔥
+                <span> Partnerships</span>
               </p>
 
               <p>
                 <CheckCircleIcon className="icon" />
-                Web3 integrations
+                <span> Mobile app (IOs version)</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                Gateways and bridges
+                <span> Series of features and upgrades updates</span>
               </p>
               <p>
                 <CheckCircleIcon className="icon" />
-                Update Roadmap 2023.
+                <span> First Task token burn 🔥</span>
+              </p>
+
+              <p>
+                <CheckCircleIcon className="icon" />
+                <span> Web3 integrations</span>
+              </p>
+              <p>
+                <CheckCircleIcon className="icon" />
+                <span> Gateways and bridges</span>
+              </p>
+              <p>
+                <CheckCircleIcon className="icon" />
+                <span>Update Roadmap 2023.</span>
               </p>
             </div>
           </div>

@@ -25,7 +25,7 @@ function Modal() {
       >
         <PresentationChartBarIcon className="linkIcon" /> Pitch Deck
       </a>
-      <a href="https://main.telostask.app/login" target="_blank" rel="noopener">
+      <a href="https://telostask.app/login" target="_blank" rel="noopener">
         <CollectionIcon className="linkIcon" /> Products
       </a>
       <a href="/comingsoon" target="_blank" rel="noopener">

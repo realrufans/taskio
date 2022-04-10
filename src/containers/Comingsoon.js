@@ -8,11 +8,11 @@ function Comingsoon() {
       <div className="comingSoon">
         {" "}
         <Typing
-          text="Coming Sooon!"
+          text="Coming Soon!"
           element="h1"
           cursorColor={"white"}
           disableBlinkingOnEnd={true}
-          typeSpeed={100}
+          typeSpeed={500}
         />
       </div>
     </>
