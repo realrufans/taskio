@@ -3,10 +3,13 @@ import React, { useContext, useState, useEffect } from "react";
 import { Header } from "../components";
 import { ThemeContext } from "../lib/context";
 import Modal from "./Modal";
+import telostaskwhitepapper from "../pdf/telostaskwhitepapper.pdf";
+import { useNavigate } from "react-router-dom";
 
 function HHeader() {
   const { theme, setTheme, modal, setModal } = useContext(ThemeContext);
   const [width, setWidth] = useState(0);
+  const navigate = useNavigate();
 
   // Change theme handler
   const themeToggler = () => {
@@ -41,15 +44,15 @@ function HHeader() {
         </Header.LogoFrame>
 
         <Header.MiddleFrame>
-          <Header.TextLinks
+          {/* <Header.TextLinks
             href="https://telostask.io/form/"
             target="_blank"
             rel="noopener"
           >
             Get tasks
-          </Header.TextLinks>
+          </Header.TextLinks> */}
           <Header.TextLinks
-            href="https://telostask.io/wp-content/uploads/2021/04/Telos-Task-Whitepaper-2.pdf"
+            href={telostaskwhitepapper}
             target="_blank"
             rel="noopener"
           >
@@ -70,17 +73,13 @@ function HHeader() {
             Pitch Deck
           </Header.TextLinks>
           <Header.TextLinks
-            href="https://telostask.app/login"
+            href="https://telostask.app"
             target="_blank"
             rel="noopener"
           >
             Product
           </Header.TextLinks>
-          <Header.TextLinks
-            href="https://telostask.io/bug-report/"
-            target="_blank"
-            rel="noopener"
-          >
+          <Header.TextLinks href="/comingsoon" target="_blank" rel="noopener">
             Report Bug
           </Header.TextLinks>
         </Header.MiddleFrame>

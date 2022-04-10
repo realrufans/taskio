@@ -167,7 +167,7 @@ body {
     max-width: 600px;
     line-height: 1.9;
     width: 100%;
-    margin-left: 1em;
+    margin: 0 1em;
     font-size: 1rem;
   }
 }
@@ -244,7 +244,7 @@ iframe {
   max-width: 1200px;
 }
 .secD > h1 {
-   margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 .tokenDetails {
   text-align: start;
@@ -316,11 +316,13 @@ a:hover {
 /* animations */
 .image,
 .firstImage,
-.tokenDetails {
+.tokenDetails,
+.TtaskInfo {
   transition: transform 2s ease;
 }
 .image:hover,
-.firstImage:hover {
+.firstImage:hover,
+.TtaskInfo:hover {
   transform: scale(1.2);
 }
 .tokenDetails:hover {
@@ -338,7 +340,7 @@ a:hover {
   position: absolute;
   top: 3.5rem;
   right: 0;
-  background-color: #18273D;
+  background-color: #18273d;
   width: 90vw;
   height: 90vh;
   display: flex;
@@ -360,4 +362,19 @@ a:hover {
 
 .linkIcon {
   height: 40px;
+}
+
+.comingSoon {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2em;
+}
+@media (max-width: 900px) {
+  .comingSoon {
+    padding: 3rem;
+    font-size: 1.2rem;
+    margin-top: 5em;
+  }
 }

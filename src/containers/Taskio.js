@@ -3,6 +3,7 @@ import "aos/dist/aos.css";
 import { CheckCircleIcon } from "@heroicons/react/solid";
 import hero from "../icons/hero.svg";
 import mission from "../icons/mission.svg";
+import { Typing, TypingStep } from "typing-effect-reactjs";
 
 function Taskio() {
   AOS.init();
@@ -12,8 +13,8 @@ function Taskio() {
         <div className="secAChildren">
           <div className="secAdetails">
             <div className="motto">
-              '<span className="green">Do</span> Less Earn{" "}
-              <span className="green">More</span>'
+              <span className="green">Do</span> Less Earn{" "}
+              <span className="green">More</span>
             </div>
             <p className="firstp ">
               The TelosTask platform offers 4-in-1 product features of Tasks.
@@ -21,7 +22,7 @@ function Taskio() {
               distributions" For the completion of big and small Tasks Which we
               refer to as micro and macro gigs alongside taskdrop and
               Thurderclapping. Welcome to the world of WorkFi perhaps...{" "}
-              <strong className="green">Taskfi</strong>{" "}
+              <strong className="green">TaskFi</strong>{" "}
             </p>
           </div>
 
@@ -44,11 +45,11 @@ function Taskio() {
               <img className="image" src={mission} />
 
               <p className="TtaskInfo">
-                <strong className="strong">TelosTask:</strong> The TelosTask
-                platform is a peer-to-peer multi-purpose freelance marketplace
-                that utilizes blockchain technology and allows those who need
-                some tasks completed (Employers) to connect with gig workers
-                (Micro/Macro workers) from anywhere in the world.{" "}
+                <strong className="strong">TelosTask:</strong> is a peer-to-peer
+                multi-purpose freelance marketplace that utilizes blockchain
+                technology and allows those who need some tasks completed
+                (Employers) to connect with gig workers (Micro/Macro workers)
+                from anywhere in the world.{" "}
                 <a href="https://cointelegraph.com/news/telos-launches-new-gig-economy-platform-on-the-blockchain">
                   Read More
                 </a>{" "}
@@ -58,7 +59,7 @@ function Taskio() {
             <div className="sectionBChild">
               <img
                 className="image imagesec"
-                src='https://telostask.io/wp-content/uploads/2021/02/kisspng-initial-coin-offering-blockchain-cryptocurrency-se-5c6e44946bf213.4465598515507303884422.png'
+                src="https://telostask.io/wp-content/uploads/2021/02/kisspng-initial-coin-offering-blockchain-cryptocurrency-se-5c6e44946bf213.4465598515507303884422.png"
                 alt="the mission"
               />
 
@@ -86,12 +87,13 @@ function Taskio() {
       {/* sectionc */}
       <div className="secC">
         <h1> TelosTask platform</h1>
-
-        <p className="secp">
+        <div className="secp">
           {" "}
-          A new powerful freelance marketplace built by innovative minds and
-          with flawless technology for the freelance community
-        </p>
+          <Typing
+            text="A new powerful freelance marketplace built by innovative minds and with flawless technology for the freelance community."
+            element="p"
+          />
+        </div>
 
         <div className="secCFAndVid">
           <div className="features">
@@ -180,6 +182,63 @@ function Taskio() {
           <h1>Roadmap</h1>
           <div className="secEChildren">
             <div className="tokenDetails roadmappoints">
+              <h3>2020: Q4 - 2021 Q2</h3>
+              <p>
+                <CheckCircleIcon className="icon" />
+                Ideations of a gig
+              </p>
+
+              <p>
+                <CheckCircleIcon className="icon" />
+                Telos Task envisioned
+              </p>
+              <p>
+                <CheckCircleIcon className="icon" />
+                Telos Task branding
+              </p>
+              <p>
+                <CheckCircleIcon className="icon" />
+                Telos WPS Approved to build
+              </p>
+              <p>
+                <CheckCircleIcon className="icon" />
+                TelosTask Alpha development
+              </p>
+            </div>
+
+            <div className="tokenDetails roadmappoints">
+              <h3>2021 - Q1, 2022 - Q1</h3>
+              <p>
+                <CheckCircleIcon className="icon" />
+                Countdown to launch Alpha announcement
+              </p>
+
+              <p>
+                <CheckCircleIcon className="icon" />
+                I.T.O (Initial Taskofferings)
+              </p>
+              <p>
+                <CheckCircleIcon className="icon" />
+                Alpha Platform Launch
+              </p>
+              <p>
+                <CheckCircleIcon className="icon" />
+                First Marketing
+              </p>
+              <p>
+                <CheckCircleIcon className="icon" />
+                $TASK first Dex listing
+              </p>
+              <p>
+                <CheckCircleIcon className="icon" />
+                distribution
+              </p>
+              <p>
+                <CheckCircleIcon className="icon" />
+                Development of TelosTask V2 (Beta)
+              </p>
+            </div>
+            <div className="tokenDetails roadmappoints">
               <h3>2022, (Q2) - 2023 (Q2)</h3>
               <p>
                 <CheckCircleIcon className="icon" />
@@ -240,64 +299,6 @@ function Taskio() {
               <p>
                 <CheckCircleIcon className="icon" />
                 Update Roadmap 2023.
-              </p>
-            </div>
-
-            <div className="tokenDetails roadmappoints">
-              <h3>2021 - Q1, 2022 - Q1</h3>
-              <p>
-                <CheckCircleIcon className="icon" />
-                Countdown to launch Alpha announcement
-              </p>
-
-              <p>
-                <CheckCircleIcon className="icon" />
-                I.T.O (Initial Taskofferings)
-              </p>
-              <p>
-                <CheckCircleIcon className="icon" />
-                Alpha Platform Launch
-              </p>
-              <p>
-                <CheckCircleIcon className="icon" />
-                First Marketing
-              </p>
-              <p>
-                <CheckCircleIcon className="icon" />
-                $TASK first Dex listing
-              </p>
-              <p>
-                <CheckCircleIcon className="icon" />
-                distribution
-              </p>
-              <p>
-                <CheckCircleIcon className="icon" />
-                Development of TelosTask V2 (Beta)
-              </p>
-            </div>
-
-            <div className="tokenDetails roadmappoints">
-              <h3>2020: Q4 - 2021 Q2</h3>
-              <p>
-                <CheckCircleIcon className="icon" />
-                Ideations of a gig
-              </p>
-
-              <p>
-                <CheckCircleIcon className="icon" />
-                Telos Task envisioned
-              </p>
-              <p>
-                <CheckCircleIcon className="icon" />
-                Telos Task branding
-              </p>
-              <p>
-                <CheckCircleIcon className="icon" />
-                Telos WPS Approved to build
-              </p>
-              <p>
-                <CheckCircleIcon className="icon" />
-                TelosTask Alpha development
               </p>
             </div>
           </div>

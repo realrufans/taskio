@@ -4,13 +4,13 @@ import HHeader from "./containers/header";
 
 import FFooter from "./containers/footer";
 import { ThemeProvider } from "styled-components";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { GlobalStyles, darkTheme, lightTheme } from "./containers/theme";
 import { useState, useRef } from "react";
 import { ThemeContext } from "./lib/context";
 import Typewriter from "typewriter-effect";
 import Taskio from "./containers/Taskio";
-import { useEffect } from "react/cjs/react.production.min";
+import Comingsoon from "./containers/Comingsoon";
 
 function App() {
   const getUserTheme = localStorage.getItem("userThemeChoice");
@@ -26,15 +26,40 @@ function App() {
     <ThemeContext.Provider value={{ theme, setTheme, modal, setModal, appRef }}>
       <ThemeProvider theme={theme === "dark" ? darkTheme : darkTheme}>
         <GlobalStyles />
-        <BrowserRouter>
+        <Router>
           <div className="App">
-            <HHeader />
-            <div onClick={() => setModal(false)}>
-            <Taskio />
-            <FFooter />
-            </div>
+            <Routes>
+              <Route
+                exact
+                path="/"
+                element={
+                  <div>
+                    <HHeader />
+                    <div onClick={() => setModal(false)}>
+                      <Taskio />
+                      <FFooter />
+                    </div>
+                  </div>
+                }
+              />
+
+              <Route
+                exact
+                path="/comingsoon"
+                element={
+                  <>
+                    {" "}
+                    <HHeader />
+                    <div onClick={() => setModal(false)}>
+                      <Comingsoon />
+                      <FFooter />
+                    </div>
+                  </>
+                }
+              />
+            </Routes>
           </div>
-        </BrowserRouter>
+        </Router>
       </ThemeProvider>
     </ThemeContext.Provider>
   );
