@@ -310,11 +310,7 @@ a:hover {
   width: 3rem;
   color: #1dbf73;
 }
-@media (min-width: 901px) {
-  .menu {
-    display: none;
-  }
-}
+
 
 /* animations */
 .image,
@@ -379,5 +375,11 @@ a:hover {
     padding: 3rem;
     font-size: 1.2rem;
     margin-top: 5em;
+  }
+}
+@media (min-width: 901px) {
+  .menu,
+  .modal {
+    display: none;
   }
 }

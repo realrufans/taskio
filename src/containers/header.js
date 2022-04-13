@@ -3,7 +3,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { Header } from "../components";
 import { ThemeContext } from "../lib/context";
 import Modal from "./Modal";
-import telostaskwhitepapper from "../pdf/telostaskwhitepapper.pdf";
+import TaskPaperV2 from "../pdf/TaskPaperV2.pdf";
 import { useNavigate } from "react-router-dom";
 
 function HHeader() {
@@ -52,7 +52,7 @@ function HHeader() {
             Get tasks
           </Header.TextLinks> */}
           <Header.TextLinks
-            href={telostaskwhitepapper}
+            href={TaskPaperV2}
             target="_blank"
             rel="noopener"
           >
