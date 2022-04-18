@@ -9,7 +9,7 @@ The Telos Task platform was crafted by the [Mydappr](Mydappr.io) team as a marke
 # Follow us on social media
 
 
-- [Telegram](https://t.me/@telostask)
+- [Telegram](https://t.me/@telostasks)
 - [Twitter](https://Twitter.com/@telostask)
 - [Facebook](https://Facebook/@TelosTask)
 - [LinkedIn](https://www.linkedin.com/showcase/71098913/)

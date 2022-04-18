@@ -109,7 +109,7 @@ function FFooter() {
             src={CheckThemeForIcon("mediumL.png", "mediumD.png")}
           />
           <Footer.SocialsImg
-            onClick={() => (window.location.href = "https://t.me/Telostask")}
+            onClick={() => (window.location.href = "https://t.me/telostasks")}
             src={CheckThemeForIcon("telegramL.png", "telegramD.png")}
           />
         </Footer.SocialImageFrame>
