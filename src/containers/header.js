@@ -3,7 +3,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { Header } from "../components";
 import { ThemeContext } from "../lib/context";
 import Modal from "./Modal";
-import TaskPaperV2 from "../pdf/TaskPaperV2.pdf";
+import TaskPaperV3 from "../pdf/TaskPaperV3.pdf";
 import { useNavigate } from "react-router-dom";
 
 function HHeader() {
@@ -33,9 +33,7 @@ function HHeader() {
   return (
     <Header className="Header">
       <Header.Frame>
-        <Header.LogoFrame
-          onClick={() => (window.location.href = "/")}
-        >
+        <Header.LogoFrame onClick={() => (window.location.href = "/")}>
           <Header.Logo
             src={require("../icons/logo.png")}
             alts="telostask logo"
@@ -51,11 +49,7 @@ function HHeader() {
           >
             Get tasks
           </Header.TextLinks> */}
-          <Header.TextLinks
-            href={TaskPaperV2}
-            target="_blank"
-            rel="noopener"
-          >
+          <Header.TextLinks href={TaskPaperV3} target="_blank" rel="noopener">
             Task Paper
           </Header.TextLinks>
           <Header.TextLinks
