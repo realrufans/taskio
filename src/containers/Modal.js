@@ -6,12 +6,12 @@ import {
   RssIcon,
   ShieldExclamationIcon,
 } from "@heroicons/react/solid";
-import TaskPaperV2 from "../pdf/TaskPaperV2.pdf";
+import TaskPaperV3 from "../pdf/TaskPaperV3.pdf";
 
 function Modal() {
   return (
     <div className="modal">
-      <a href={TaskPaperV2} target="_blank" rel="noopener">
+      <a href={TaskPaperV3} target="_blank" rel="noopener">
         {" "}
         <NewspaperIcon className="linkIcon" /> Task Paper
       </a>
