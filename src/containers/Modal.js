@@ -1,35 +1,32 @@
-import {
-  CashIcon,
-  CollectionIcon,
-  NewspaperIcon,
-  PresentationChartBarIcon,
-  RssIcon,
-  ShieldExclamationIcon,
-} from "@heroicons/react/solid";
+import { XIcon } from "@heroicons/react/solid";
 import TaskPaperV3 from "../pdf/TaskPaperV3.pdf";
+import { useContext } from "react";
+import { ThemeContext } from "../lib/context";
 
 function Modal() {
+  const { modal, setModal } = useContext(ThemeContext);
   return (
     <div className="modal">
+      <XIcon onClick={() => setModal(!modal)} className="linkIcon" />
       <a href={TaskPaperV3} target="_blank" rel="noopener">
         {" "}
-        <NewspaperIcon className="linkIcon" /> Task Paper
+        Task Paper
       </a>
       <a href="https://telostask.medium.com/" target="_blank" rel="noopener">
-        <RssIcon className="linkIcon" /> Task Blog
+        Task Blog
       </a>
       <a
         href="https://docs.google.com/presentation/d/1RzQHW-9KR8mDFRNonnuSmxK2y37f0i-12PDA61uvo_4/edit#slide=id.p1"
         target="_blank"
         rel="noopener"
       >
-        <PresentationChartBarIcon className="linkIcon" /> Pitch Deck
+        Pitch Deck
       </a>
       <a href="https://telostask.app/login" target="_blank" rel="noopener">
-        <CollectionIcon className="linkIcon" /> Products
+        Products
       </a>
       <a href="/comingsoon" target="_blank" rel="noopener">
-        <ShieldExclamationIcon className="linkIcon" /> Report Bug
+        Report Bug
       </a>
     </div>
   );

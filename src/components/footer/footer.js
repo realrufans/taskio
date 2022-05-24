@@ -4,8 +4,7 @@ import { keyframes } from "styled-components";
 import { CheckerHBg, CheckColor } from "../constants/themeCheckerForBg";
 
 export const Container = styled.footer`
-  background: ${() => CheckerHBg("Sbbg")} top left/cover no-repeat;
-  background: #18273d;
+ 
   margin: 0 auto;
   margin-top: 1em;
 `;

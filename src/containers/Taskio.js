@@ -4,8 +4,6 @@ import { CheckCircleIcon } from "@heroicons/react/solid";
 import hero from "../icons/hero.svg";
 import mission from "../icons/mission.svg";
 import { Typing, TypingStep } from "typing-effect-reactjs";
-import TypeAnimation from 'react-type-animation';
-
 
 function Taskio() {
   AOS.init();
@@ -18,68 +16,64 @@ function Taskio() {
               <span className="green">Do</span> Less Earn{" "}
               <span className="green">More</span>
             </div>
-            <p className="firstp ">
+            <p className="firstp">
               The TelosTask platform offers 4-in-1 product features of Tasks.
               Set up to achieve the possibilities of an actual "task
               distributions" For the completion of big and small Tasks Which we
               refer to as micro and macro gigs alongside taskdrop and
               Thurderclapping. Welcome to the world of WorkFi perhaps...{" "}
-              <strong className="green">TaskFi</strong>{" "}
+              <span className="green">TaskFi</span>{" "}
             </p>
           </div>
 
-          <img className="  firstImage" src={hero} />
+          <img className="firstImage" src={hero} />
         </div>
       </div>
 
       {/* section B */}
 
-      <div className="B">
-        <div className="secB">
-          <h1>What is TelosTask</h1>
-          <div className="sectionBDetails">
-            <div className="sectionBChild">
-              {/* <img
-                className="image"
-                src="https://telostask.io/wp-content/uploads/2021/02/kisspng-initial-coin-offering-blockchain-cryptocurrency-se-5c6e44946bf213.4465598515507303884422.png"
-              /> */}
+      <div className="secB">
+        <h1 className="ttaskdef">What is TelosTask?</h1>
+        <div className="sectionBDetails">
+          <div className="sectionBChild">
+            <img className="image s" src={mission} />
+            <p className="TtaskInfo">
+              <div>
+                {" "}
+                <strong className="strong">TelosTask</strong>
+              </div>{" "}
+              is a peer-to-peer multi-purpose freelance marketplace that
+              utilizes blockchain technology and allows those who need some
+              tasks completed (Employers) to connect with gig workers
+              (Micro/Macro workers) from anywhere in the world.{" "}
+              <a href="https://cointelegraph.com/news/telos-launches-new-gig-economy-platform-on-the-blockchain">
+                Read More
+              </a>{" "}
+            </p>
+          </div>
 
-              <img className="image" src={mission} />
-
-              <p className="TtaskInfo">
-                <strong className="strong">TelosTask:</strong> is a peer-to-peer
-                multi-purpose freelance marketplace that utilizes blockchain
-                technology and allows those who need some tasks completed
-                (Employers) to connect with gig workers (Micro/Macro workers)
-                from anywhere in the world.{" "}
-                <a href="https://cointelegraph.com/news/telos-launches-new-gig-economy-platform-on-the-blockchain">
-                  Read More
-                </a>{" "}
-              </p>
-            </div>
-
-            <div className="sectionBChild">
-              <img
-                className="image imagesec"
-                src="https://images.hive.blog/DQmQwogeucHRkRXdcZBtGGuNHchmdR6bb8yWYiq3Q1TuqDb/image.png"
-                alt="the mission"
-              />
-
-              <p className="TtaskInfo">
-                <strong className="strong">The mission:</strong> Our mission to
-                improve the freelance industry by building a robust
-                decentralized freelance marketplace of task seekers and task
-                workers through the application of blockchain technology, is to
-                solve the common problems of traditional gig platforms of which
-                might make the "TelosTask application" become the new
-                freelancing financial trend of WorkFi, perhaps{" "}
-                <span>"TaskFi"</span>.{" "}
-                <a href="https://dappradar.com/telos/marketplaces/telostask">
-                  {" "}
-                  Continue reading
-                </a>
-              </p>
-            </div>
+          <div className="sectionBChild flexsec">
+            <p className="TtaskInfo ">
+              <div>
+                {" "}
+                <strong className="strong">The Mission</strong>
+              </div>{" "}
+              Our mission to improve the freelance industry by building a robust
+              decentralized freelance marketplace of task seekers and task
+              workers through the application of blockchain technology, is to
+              solve the common problems of traditional gig platforms of which
+              might make the "TelosTask application" become the new freelancing
+              financial trend of WorkFi, perhaps <span>"TaskFi"</span>.{" "}
+              <a href="https://dappradar.com/telos/marketplaces/telostask">
+                {" "}
+                Continue reading
+              </a>
+            </p>
+            <img
+              className="image s "
+              src="https://images.hive.blog/DQmQwogeucHRkRXdcZBtGGuNHchmdR6bb8yWYiq3Q1TuqDb/image.png"
+              alt="the mission"
+            />
           </div>
         </div>
       </div>
@@ -88,19 +82,14 @@ function Taskio() {
 
       {/* sectionc */}
       <div className="secC">
-        <h1> TelosTask platform</h1>
-        <div className="secp">
-          {" "}
-          <Typing
-            text="A new powerful freelance marketplace built by innovative minds and with flawless technology for the freelance community."
-            element="p"
-            typeSpeed={200}
-          />
-        </div>
-
         <div className="secCFAndVid">
           <div className="features">
-            <h2>Platform features</h2>
+            <h1> TelosTask platform</h1>
+            <p className="secp">
+              A new powerful freelance marketplace built by innovative minds and
+              with flawless technology for the freelance community.
+            </p>
+
             <div className="dnp  ">
               <CheckCircleIcon className="icon" />
               <div>Micro Tasks</div>
@@ -140,9 +129,10 @@ function Taskio() {
         <div className="sectionDChildren">
           <img
             className="image"
-            src='https://images.hive.blog/DQmVLw5r64eCcE2EPhAvoxHomVbVdEEX6SSUQ8X2LeZme6b/image.png'
+            src="https://images.hive.blog/DQmVLw5r64eCcE2EPhAvoxHomVbVdEEX6SSUQ8X2LeZme6b/image.png"
           />
           <div className="tokenDetails">
+            <h2>$Task on Telos</h2>
             <p>
               {" "}
               <CheckCircleIcon className="icon" />
@@ -176,6 +166,58 @@ function Taskio() {
               <CheckCircleIcon className="icon" />
               <span> Unallocated/minting - 3%</span>
             </p>
+          </div>
+          <div className="tokenDetails">
+            <h2>$Task on Binance Smart Chain (Bsc)</h2>
+            <p>
+              {" "}
+              <CheckCircleIcon className="icon" />
+              <span> Total token supply: 100,000,000</span>
+            </p>
+            <p>
+              {" "}
+              <CheckCircleIcon className="icon" />{" "}
+              <span>Team - 16% (5 years vesting 2021 - 2025)</span>
+            </p>
+            <p>
+              {" "}
+              <CheckCircleIcon className="icon" />
+              <span> Marketing - 20%</span>
+            </p>
+            <p>
+              {" "}
+              <CheckCircleIcon className="icon" /> <span>ITO - 40%</span>
+            </p>
+            <p>
+              {" "}
+              <CheckCircleIcon className="icon" />{" "}
+              <span>Development - 20%</span>
+            </p>
+            <p>
+              {" "}
+              <CheckCircleIcon className="icon" /> <span>Airdrop - 1%</span>
+            </p>
+            <p>
+              {" "}
+              <CheckCircleIcon className="icon" />
+              <span> Unallocated/minting - 3%</span>
+            </p>
+            <span
+              style={{
+                marginBottom: "0",
+                display: "flex",
+                flexDirection: "column",
+              }}
+              className="strong"
+            >
+              Contract address:
+              <a
+                className="contract"
+                href="https://bscscan.com/token/0x5090AA76fC140e20706f26e82EbC1dccB0D0438b"
+              >
+                0x5090AA76fC140e20706f26e82EbC1dccB0D0438b
+              </a>
+            </span>
           </div>
         </div>
       </div>
@@ -309,6 +351,10 @@ function Taskio() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="sponsors">
+        <img src="https://www.businessinsider.in/thumb/msid-87597940,width-700,resizemode-4,imgsize-6354/cryptocurrency/news/telos-is-hedging-against-crypto-bear-market-with-fresh-investment-from-its-first-ever-marquee-investors/telos.jpg" />
+        <img src="https://pbs.twimg.com/profile_images/1364399289120735234/sPyi7fvC_400x400.jpg" />
       </div>
     </div>
   );
