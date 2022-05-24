@@ -132,12 +132,11 @@ body {
   line-height: 1.3;
   max-width: 600px;
   font-size: 1.2rem;
-  opacity: 0.64;
-/* 
-  font-size: 18px;
-  opacity: 0.64;
-  font-weight: 200; */
+  opacity: 0.8;
+  font-family: Satoshi, sans-serif;
+  font-weight: 200;
 }
+
 @media (min-width: 600px) {
   .firstp {
     max-width: 600px;
@@ -155,15 +154,16 @@ body {
 }
 
 .ttaskdef {
-  font-size: 3rem;
+  font-size: 2rem;
   max-width: min-content;
   margin: 0 auto;
 }
 .TtaskInfo {
   text-align: start;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-left: 0.5em;
   font-family: Satoshi, sans-serif;
+  font-weight: 200;
   max-width: 600px;
 
   color: rgba(0, 0, 0, 0.7);
@@ -181,11 +181,9 @@ body {
   .flexsec {
     display: flex;
     flex-direction: column;
-    
   }
-  .flexsec>p{
+  .flexsec > p {
     order: 1;
- 
   }
 }
 
@@ -201,13 +199,12 @@ body {
     flex-direction: row;
     height: fit-content;
   }
-  .s{
+  .s {
     border-radius: 50%;
     height: 400px;
     width: 400px;
-     border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
   }
-  
 
   .sectionBDetails {
     width: 100%;
@@ -249,7 +246,6 @@ body {
     margin: 0 1em;
     font-size: 1.2rem;
   }
-
 }
 .TtaskInfo > a {
   padding: 0 1em;
@@ -280,7 +276,8 @@ body {
 .dnp > div,
 .secp {
   color: rgba(0, 0, 0, 0.7);
-  opacity: 0.64;
+  opacity: 0.7;
+  line-height: 1.5;
 }
 iframe {
   width: 95%;
@@ -289,7 +286,6 @@ iframe {
 }
 .secC > h1 {
   font-weight: bold;
-  font-size: 1.5rem;
 }
 .secp {
   text-align: start;
@@ -354,10 +350,9 @@ iframe {
   margin: 1em;
   padding: 0.5em;
   height: fit-content;
+   
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0);
 }
- 
-
 
 @media (min-width: 700px) {
   .sectionDChildren {
@@ -383,6 +378,10 @@ iframe {
   align-items: center;
   gap: 0.5em;
 }
+h3 {
+  color: #1dbf73;
+  opacity: 0.8;
+}
 .tokenDetails > p > span {
   width: 100%;
 }
@@ -400,14 +399,10 @@ iframe {
 }
 
 .contract {
+ font-size: 0.76rem;
   text-decoration: none;
-  width: inherit;
-  font-size: 0.8rem;
-
-  /* white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; */
 }
+
 /* extras */
 strong {
   font-size: 1.5rem;
@@ -501,6 +496,7 @@ a:hover {
 
 h1 {
   color: #1dbf73;
+  opacity: 0.8;
 }
 .comingSoon {
   font-family: Satoshi, sans-serif;
@@ -531,7 +527,6 @@ h1 {
   height: 20vh;
   align-items: center;
   gap: 2em;
-  width: 100%;
  
   justify-content: center;
 }
@@ -543,7 +538,6 @@ h1 {
 .sponsors > img {
   border-radius: 50%;
   width: 70px;
-
   height: 70px;
 }
 

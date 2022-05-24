@@ -132,7 +132,7 @@ function Taskio() {
             src="https://images.hive.blog/DQmVLw5r64eCcE2EPhAvoxHomVbVdEEX6SSUQ8X2LeZme6b/image.png"
           />
           <div className="tokenDetails">
-            <h2>$Task on Telos</h2>
+            <h3>$Task on Telos</h3>
             <p>
               {" "}
               <CheckCircleIcon className="icon" />
@@ -168,7 +168,7 @@ function Taskio() {
             </p>
           </div>
           <div className="tokenDetails">
-            <h2>$Task on Binance Smart Chain (Bsc)</h2>
+            <h3>$Task on Binance Smart Chain (Bsc)</h3>
             <p>
               {" "}
               <CheckCircleIcon className="icon" />
@@ -202,22 +202,12 @@ function Taskio() {
               <CheckCircleIcon className="icon" />
               <span> Unallocated/minting - 3%</span>
             </p>
-            <span
-              style={{
-                marginBottom: "0",
-                display: "flex",
-                flexDirection: "column",
-              }}
-              className="strong"
-            >
-              Contract address:
-              <a
-                className="contract"
-                href="https://bscscan.com/token/0x5090AA76fC140e20706f26e82EbC1dccB0D0438b"
-              >
-                0x5090AA76fC140e20706f26e82EbC1dccB0D0438b
+            <div className="strong ">
+              <p> Contract address:</p>
+              <a  href="https://bscscan.com/token/0x5090AA76fC140e20706f26e82EbC1dccB0D0438b">
+               <p className="contract"> 0x5090AA76fC140e20706f26e82EbC1dccB0D0438b</p>
               </a>
-            </span>
+            </div>
           </div>
         </div>
       </div>
