@@ -35,9 +35,11 @@ function App() {
                 element={
                   <div>
                     <HHeader />
+                    <div className="apllusb">
                     <div onClick={() => setModal(false)}>
                       <Taskio />
                       <FFooter />
+                    </div>
                     </div>
                   </div>
                 }
