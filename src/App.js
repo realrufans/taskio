@@ -18,6 +18,7 @@ function App() {
   const [theme, setTheme] = useState(
     getUserTheme === null ? "dark" : getUserTheme
   );
+  
 
   const [modal, setModal] = useState(false);
 

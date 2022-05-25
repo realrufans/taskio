@@ -9,10 +9,8 @@ background-image: radial-gradient(circle, #ffffff, #fcfcfe, #f9f9fd, #f5f7fd, #f
   position: fixed;
   top: 0;
   z-index: 1000;
-  
   width: 100%;
   margin 0 auto;
- 
 
   margin-bottom: 2em;
   @media (max-width: 600px) {
@@ -70,12 +68,12 @@ export const Textlink = styled.a`
   text-align: start;
   text-decoration: none;
   link-style: none;
-  border-bottom:5px solid #1DBF73;
+  border-bottom:5px solid #18273D;
   border-radius:1em;
    color:#1F3045;
    opacity:0.8;
   &: hover {
-    color:  #1DBF73;
+    color: #fcb41c ;
     animation: ${swipe} 1s ease;
 
 

@@ -17,18 +17,18 @@ function HHeader() {
   };
 
   // Loading bar on scrooll
-  const getLoadingWidth = () => {
-    const winScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
-    const height =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    const currentwidth = scrolled;
-    setWidth(currentwidth);
-  };
+  // const getLoadingWidth = () => {
+  //   const winScroll =
+  //     document.body.scrollTop || document.documentElement.scrollTop;
+  //   const height =
+  //     document.documentElement.scrollHeight -
+  //     document.documentElement.clientHeight;
+  //   const scrolled = (winScroll / height) * 100;
+  //   const currentwidth = scrolled;
+  //   setWidth(currentwidth);
+  // };
 
-  window.onscroll = () => getLoadingWidth();
+  // window.onscroll = () => getLoadingWidth();
 
   return (
     <Header className="Header">
