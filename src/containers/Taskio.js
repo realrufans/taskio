@@ -1,54 +1,19 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { CheckCircleIcon } from "@heroicons/react/solid";
-import hero from "../icons/hero.svg";
-import mission from "../icons/mission.svg";
-import { Typing, TypingStep } from "typing-effect-reactjs";
 import heroL from "../icons/heroL.json";
 import { useEffect } from "react";
 import lottie from "lottie-web";
-import {
-  Chart,
-  ChartLegend,
-  ChartSeries,
-  ChartSeriesItem,
-  ChartTitle,
-} from "@progress/kendo-react-charts";
- 
-import "hammerjs";
-const series = [
-  {
-    category: "0-14",
-    value: 0.2545,
-  },
-  {
-    category: "15-24",
-    value: 0.1552,
-  },
-  {
-    category: "25-54",
-    value: 0.4059,
-  },
-  {
-    category: "55-64",
-    value: 0.0911,
-  },
-  {
-    category: "65+",
-    value: 0.0933,
-  },
-];
-
-const labelContent = (props) => {
-  let formatedNumber = Number(props.dataItem.value).toLocaleString(undefined, {
-    style: "percent",
-    minimumFractionDigits: 2,
-  });
-  return `${props.dataItem.category} years old: ${formatedNumber}`;
-};
-
+import Pie from "./Pie";
 
 function Taskio() {
+  const link = {
+    fontSize: "1.2rem",
+    color: "#000000",
+    fontSize: "1rem",
+    color: "blue",
+    textDecoration: "none",
+  };
+
   useEffect(() => {
     const anim = lottie.loadAnimation({
       container: document.querySelector("#hero"),
@@ -57,8 +22,6 @@ function Taskio() {
     return () => anim.destroy();
   });
   AOS.init();
-
-
 
   return (
     <div className="all">
@@ -82,13 +45,21 @@ function Taskio() {
 
           {/* <img className="firstImage" id="hero" /> */}
         </div>
+         
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="wave">
+          <path
+            fill="#1dbf73"
+            fill-opacity="1"
+            d="M0,224L48,224C96,224,192,224,288,234.7C384,245,480,267,576,250.7C672,235,768,181,864,165.3C960,149,1056,171,1152,192C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+       
       </div>
 
       {/* section B */}
- 
 
       <div className="secB">
-        <h1 className="ttaskdef">What is TelosTask?</h1>
+        <h1 className="ttaskdef">What Is TelosTask?</h1>
         <div className="sectionBDetails">
           <div className="sectionBChild">
             {/* <img className="image s" src={mission} /> */}
@@ -125,7 +96,7 @@ function Taskio() {
                 </a>
               </p>
             </div>
-            <div>
+            <div className="vidframe">
               {" "}
               <iframe
                 width="560"
@@ -149,18 +120,20 @@ function Taskio() {
         </div>
       </div>
 
-      {/* section C */}
-
       {/* sectionc */}
+
       <div className="secC">
         <h1 style={{ fontSize: "3rem", marginBottom: "1em" }}>
           {" "}
           Telos<span style={{ color: "#FFC600" }}>Task</span> platform
         </h1>
+
         <p className="secp">
           A new powerful freelance marketplace built by innovative minds and
           with flawless technology for the freelance community.
         </p>
+
+        <div className=" seccim"></div>
         {/* <div className="secCFAndVid">
           <div className="features"></div>
           <div>
@@ -189,14 +162,15 @@ function Taskio() {
             </div>
           </div>
         </div> */}
-        <img
+        {/* <img
           style={{
             maxwidth: "100wv",
             width: "100%",
             margin: "0 auto",
+       
           }}
-          src="https://images.hive.blog/DQmZ9LjY9eM4W5mRtaXZbHphbKJsLc3kZEadA8aaGiPwoe7/image.png"
-        />
+          src="https://images.hive.blog/DQmTZLEtGUTu4tkNJDaAhtBh5fuNZZymj4SKZaJsFH6K1du/Slide%204.png"
+        /> */}
       </div>
 
       {/* section D */}
@@ -204,8 +178,9 @@ function Taskio() {
       {/* section D */}
 
       <div className="secD">
-        <h1>Task tokenomics</h1>{" "}
+        {/* <h1>Task tokenomics</h1>{" "} */}
         <div className="sectionDChildren">
+          <Pie className="" />
           {/* <img
             className="image"
             src="https://images.hive.blog/DQmVLw5r64eCcE2EPhAvoxHomVbVdEEX6SSUQ8X2LeZme6b/image.png"
@@ -247,48 +222,45 @@ function Taskio() {
             </p>
           </div> */}
           <div className="tokenDetails">
-            <h3>$Task on Binance Smart Chain (Bsc)</h3>
-            <p>
-              {" "}
-              <CheckCircleIcon className="icon" />
-              <span> Total token supply: 100,000,000</span>
-            </p>
-            <p>
-              {" "}
-              <CheckCircleIcon className="icon" />{" "}
-              <span>Team - 16% (5 years vesting 2021 - 2025)</span>
-            </p>
-            <p>
-              {" "}
-              <CheckCircleIcon className="icon" />
-              <span> Marketing - 20%</span>
-            </p>
-            <p>
-              {" "}
-              <CheckCircleIcon className="icon" /> <span>ITO - 40%</span>
-            </p>
-            <p>
-              {" "}
-              <CheckCircleIcon className="icon" />{" "}
-              <span>Development - 20%</span>
-            </p>
-            <p>
-              {" "}
-              <CheckCircleIcon className="icon" /> <span>Airdrop - 1%</span>
-            </p>
-            <p>
-              {" "}
-              <CheckCircleIcon className="icon" />
-              <span> Unallocated/minting - 3%</span>
-            </p>
+            <h2
+              style={{
+                background: "#ffc600",
+                color: "#000000",
+
+                padding: "1rem ",
+                fontSize: "1.2rem",
+                borderTopRightRadius: "4em",
+                borderTopLeftRadius: "0.5em",
+              }}
+            >
+              $Task Smart Contracts
+            </h2>
             <div className="strong ">
-              <p> Contract address:</p>
-              <a href="https://bscscan.com/token/0x5090AA76fC140e20706f26e82EbC1dccB0D0438b">
-                <p className="contract">
+              <div className=" cardI ">
+                <h3>Telos Native </h3>
+                <p>
                   {" "}
-                  0x5090AA76fC140e20706f26e82EbC1dccB0D0438b
+                  <a style={link} href="https://ajor.io/account/telostaskapp">
+                    TelosTask
+                  </a>
                 </p>
+              </div>
+            </div>
+
+            <div className=" cardI ">
+              <h3>Bsc</h3>
+
+              <a
+                style={link}
+                href="https://bscscan.com/token/0x5090AA76fC140e20706f26e82EbC1dccB0D0438b"
+              >
+                0x5090AA76fC140e20706f26e82EbC1dccB0D0438b
               </a>
+            </div>
+
+            <div className=" cardI ">
+              <h3>Telos Evm</h3>
+              <p style={{ color: "#000000", fontSize: "1rem" }}>Coming Soon</p>
             </div>
           </div>
 
@@ -302,9 +274,9 @@ function Taskio() {
       {/* SECTION E */}
 
       {/* sectionE */}
-      <div className="Neon">
-        <div className="secE">
-          <h1>Roadmap</h1>
+
+      <div className="secE">
+        {/* <h1>Roadmap</h1>
           <div className="secEChildren">
             <div className="tokenDetails roadmappoints">
               <h3>2020: Q4 - 2021 Q2</h3>
@@ -426,12 +398,16 @@ function Taskio() {
                 <span>Update Roadmap 2023.</span>
               </p>
             </div>
-          </div>
-        </div>
+          </div> */}
       </div>
+
       <div className="sponsors">
-        <img src="https://www.businessinsider.in/thumb/msid-87597940,width-700,resizemode-4,imgsize-6354/cryptocurrency/news/telos-is-hedging-against-crypto-bear-market-with-fresh-investment-from-its-first-ever-marquee-investors/telos.jpg" />
-        <img src="https://pbs.twimg.com/profile_images/1364399289120735234/sPyi7fvC_400x400.jpg" />
+        <img src="https://miro.medium.com/max/1400/1*-zwjwHuIHA4LrL8lUf6KiA.png" />
+        <img src="https://gameplace.finance/images/binance-smart-chain.png" />
+        <img src="https://images.hive.blog/DQmQVYXVcMsbehJZxGJonfBTraZ8pLePWU9VvB3EuJ2aTuu/images.png" />
+        <img src="https://gameplace.finance/images/pinksale.png" />
+        <img src="https://gameplace.finance/images/coinmarketcap.png" />
+        <img src="https://gameplace.finance/images/pancakeswap.png" />
       </div>
     </div>
   );

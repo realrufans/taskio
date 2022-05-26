@@ -4,7 +4,6 @@ import { keyframes } from "styled-components";
 import { CheckerHBg, CheckColor } from "../constants/themeCheckerForBg";
 
 export const Container = styled.footer`
- 
   margin: 0 auto;
   margin-top: 1em;
 `;
@@ -48,7 +47,7 @@ export const QuickSection = styled.div`
   margin-left: 1em;
 `;
 export const SectionTitle = styled.h3`
-  color: ${() => CheckColor("#f0f4fc")};
+  color: rgba(0,0,0,0.8);
 `;
 export const Links = styled.a`
   display: block;
@@ -92,7 +91,7 @@ export const SocialsImg = styled.img`
 export const Copyright = styled.p`
   @media (max-width: 600px) {
     max-width: 300px;
-    margin: 1em auto;
+    margin: 0 auto;
   }
 `;
 
