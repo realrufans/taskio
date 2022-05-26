@@ -7,10 +7,10 @@ import PieChart, {
   SmallValuesGrouping,
   Legend,
   Font,
+  Title,
 } from "devextreme-react/pie-chart";
 
 import { areas } from "./Data";
- 
 
 function Pie() {
   const [hpos, setHPos] = useState("center");
@@ -18,16 +18,18 @@ function Pie() {
   useEffect(() => {
     if (window.innerWidth > 800) {
       setVPos("top");
-      setHPos('left')
+      setHPos("left");
     }
   });
   return (
     <PieChart
       dataSource={areas}
       palette="Bright"
-      title="$Task Tokenomics"
+ 
       className="pie"
     >
+        
+        <Title text="Task Tokenomics" subtitle="$task" >   <Font weight='bold' size={40} /></Title>
       <Series argumentField="country" valueField="area">
         <Label visible={true} customizeText={formatLabel} format="fixedPoint">
           <Connector visible={true} width={0.5} />
