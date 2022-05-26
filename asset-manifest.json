@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/taskio/static/css/main.9803dc74.css",
-    "main.js": "/taskio/static/js/main.3123ce6d.js",
+    "main.css": "/taskio/static/css/main.22983374.css",
+    "main.js": "/taskio/static/js/main.2d2bef75.js",
     "static/js/27.16ec021d.chunk.js": "/taskio/static/js/27.16ec021d.chunk.js",
     "static/media/TaskPaperV3.pdf": "/taskio/static/media/TaskPaperV3.7692c2840777d9da384a.pdf",
     "static/media/taskclap.png": "/taskio/static/media/taskclap.ae72f869cce08784be9f.png",
@@ -27,7 +27,7 @@
     "index.html": "/taskio/index.html"
   },
   "entrypoints": [
-    "static/css/main.9803dc74.css",
-    "static/js/main.3123ce6d.js"
+    "static/css/main.22983374.css",
+    "static/js/main.2d2bef75.js"
   ]
 }
