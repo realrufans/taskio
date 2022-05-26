@@ -409,6 +409,7 @@ function Taskio() {
         <img src="https://gameplace.finance/images/coinmarketcap.png" />
         <img src="https://gameplace.finance/images/pancakeswap.png" />
       </div>
+ 
     </div>
   );
 }

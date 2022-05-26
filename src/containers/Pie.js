@@ -29,7 +29,7 @@ function Pie() {
       className="pie"
     >
         
-        <Title text="Task Tokenomics" subtitle="$task" >   <Font weight='bold' size={40} /></Title>
+        <Title text="Task Tokenomics" subtitle="$task" >   <Font weight='bold' size={20} /></Title>
       <Series argumentField="country" valueField="area">
         <Label visible={true} customizeText={formatLabel} format="fixedPoint">
           <Connector visible={true} width={0.5} />
@@ -37,7 +37,7 @@ function Pie() {
         <SmallValuesGrouping threshold={4.5} mode="smallValueThreshold" />
       </Series>
 
-      <Legend verticalAlignment={vpos} horizontalAlignment={hpos} />
+      <Legend verticalAlignment={'top'} horizontalAlignment={'center'} />
     </PieChart>
   );
 }
